@@ -3,7 +3,6 @@ import type { Configuration as DevServerConfiguration } from "webpack-dev-server
 
 
 export function buildDevServer(option: BuildOptions): DevServerConfiguration {
-    console.log('=====> Доработать момент в env', option.browser)
     return {
         port: option.port,
         open: {
@@ -12,5 +11,6 @@ export function buildDevServer(option: BuildOptions): DevServerConfiguration {
             }
         },
         historyApiFallback: true,
+        hot: true,
     }
 }
