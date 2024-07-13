@@ -1,16 +1,15 @@
-import {BuildOptions} from "./types/config";
-import type { Configuration as DevServerConfiguration } from "webpack-dev-server";
-
+import type { Configuration as DevServerConfiguration } from 'webpack-dev-server';
+import { BuildOptions } from './types/config';
 
 export function buildDevServer(option: BuildOptions): DevServerConfiguration {
-    console.log('=====> Доработать момент в env', option.browser)
-    return {
-        port: option.port,
-        open: {
-            app: {
-                name: option.browser
-            }
-        },
-        historyApiFallback: true,
-    }
+	return {
+		port: option.port,
+		open: {
+			app: {
+				name: option.browser,
+			},
+		},
+		historyApiFallback: true,
+		hot: true,
+	};
 }
