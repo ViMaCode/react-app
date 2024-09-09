@@ -1,6 +1,8 @@
 {
     "Welcome to React": "Добро пожаловать в React",
+    "Loading": "Загрузка...",
     "Language": "Русский",
     "Main page": "Главная",
-    "About page": "О нас"
+    "About page": "О нас",
+    "switch": "тумблер"
 }

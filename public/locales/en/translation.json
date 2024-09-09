@@ -1,6 +1,8 @@
 {
     "Welcome to React": "Welcome to React",
+    "Loading": "Loading...",
     "Language": "English",
     "Main page": "Main",
-    "About page": "About"
+    "About page": "About",
+    "switch": "switch"
 }
