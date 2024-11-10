@@ -1,6 +1,12 @@
 {
     "Welcome to React": "Добро пожаловать в React",
+    "Loading": "Загрузка...",
     "Language": "Русский",
     "Main page": "Главная",
-    "About page": "О нас"
+    "About page": "О нас",
+    "Switch": "тумблер",
+    "Page not found": "страница не найдена",
+    "An unexpected error has occurred": "Произошла непредвиденная ошибка",
+    "refresh the page": "обновить страницу",
+    "throw error": "пробросить ошибку"
 }
