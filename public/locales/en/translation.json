@@ -5,5 +5,8 @@
     "Main page": "Main",
     "About page": "About",
     "Switch": "switch",
-    "Page not found": "page not found"
+    "Page not found": "page not found",
+    "An unexpected error has occurred": "An unexpected error has occurred",
+    "refresh the page": "refresh the page",
+    "throw error": "throw error"
 }

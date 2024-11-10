@@ -11,5 +11,3 @@ export const PageLoader = ({ className }: PageLoaderProps) => (
 		<Loader />
 	</div>
 );
-
-export default PageLoader;

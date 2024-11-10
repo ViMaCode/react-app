@@ -1,10 +1,13 @@
 {
   "About page": "About page",
+  "An unexpected error has occurred": "An unexpected error has occurred",
   "Language": "Language",
   "Loading": "Loading",
   "Main page": "Main page",
   "Page not found": "Page not found",
   "Switch": "switch",
+  "refresh the page": "refresh the page",
   "switch": "switch",
-  "switching": "switching"
+  "switching": "switching",
+  "throw error": "throw error"
 }
