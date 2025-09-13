@@ -18,5 +18,3 @@ describe('Sidebar testing', () => {
 		expect(screen.getByTestId('sidebar')).toHaveClass('collapsed');
 	});
 });
-
-// todo 24 урок - время урока 21:10
