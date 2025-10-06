@@ -3,7 +3,9 @@ import { ButtonHTMLAttributes, FC } from 'react';
 import cls from './Button.module.scss';
 
 export enum ThemeButton {
+	// eslint-disable-next-line no-unused-vars
 	CLEAR = 'clear',
+	// eslint-disable-next-line no-unused-vars
 	OUTLINE = 'outline',
 }
 
@@ -24,6 +26,7 @@ export const Button: FC<ButtonProps> = (props) => {
 		<button
 			type="button"
 			className={classNames(cls.Button, {}, [className, cls[theme]])}
+			// eslint-disable-next-line react/jsx-props-no-spreading
 			{...otherProps}
 		>
 			{children}
