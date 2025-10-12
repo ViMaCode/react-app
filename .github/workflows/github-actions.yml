@@ -16,6 +16,8 @@ jobs:
         node-version: [20.x]
     steps:
       - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
       - name: Starting Node.js ${{matrix.node-version}}
         uses: actions/setup-node@v5
         with:
@@ -34,3 +36,5 @@ jobs:
         run: npm run storybook:build
       - name: screenshot test
         run: npm run test:ui:ci
+        env:
+          CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
