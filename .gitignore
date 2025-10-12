@@ -4,3 +4,7 @@
 /storybook-static
 
 *storybook.log
+
+.env
+.env.staging
+.env.production

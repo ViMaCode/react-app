@@ -12,11 +12,11 @@
     "lint:scss": "stylelint \"**/*.scss\"",
     "lint:scss:fix": "stylelint \"**/*.scss\" --fix",
     "test:unit": "jest --config ./config/jest/jest.config.ts",
-    "test:ui": "npx loki test",
-    "test:ui:ok": "npx loki approve",
+    "test:ui": "npx chromatic --build-script-name=storybook:build",
+    "test:ui:ok": "npx chromatic --approve",
+    "test:ui:ci": "npx chromatic --exit-zero-on-changes",
     "storybook": "BROWSER='google chrome' storybook dev -p 6006 -c ./config/storybook",
-    "storybook:build": "storybook build -c ./config/storybook",
-    "chromatic": "npx chromatic --project-token=chpt_432da923cf2f254"
+    "storybook:build": "storybook build -c ./config/storybook"
   },
   "keywords": [],
   "author": "",
