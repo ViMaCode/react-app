@@ -7,7 +7,7 @@ export enum AppLinkTheme {
 	// eslint-disable-next-line no-unused-vars
 	PRIMARY = 'primary',
 	// eslint-disable-next-line no-unused-vars
-	SECONDARY = 'secondary',
+	INVERTED_PRIMARY = 'inverted-primary',
 	// eslint-disable-next-line no-unused-vars
 	RED = 'red'
 }
