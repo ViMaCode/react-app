@@ -26,15 +26,21 @@ jobs:
         run: npm install
       - name: build production project
         run: npm run build:prod
+        if: always()
       - name: linting TypeScript
         run: npm run lint:ts
+        if: always()
       - name: linting SCSS
         run: npm run lint:scss
+        if: always()
       - name: linting unit tests
         run: npm run test:unit
+        if: always()
       - name: build storybook
         run: npm run storybook:build
+        if: always()
       - name: screenshot test
         run: npm run test:ui:ci
+        if: always()
         env:
           CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
