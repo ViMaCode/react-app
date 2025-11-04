@@ -78,3 +78,4 @@ export const Sidebar = ({ className }: SidebarProps) => {
 };
 
 export default Sidebar;
+// todo 28 урок - время урока 29:00
