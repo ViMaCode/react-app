@@ -12,12 +12,11 @@
     "lint:scss": "stylelint \"**/*.scss\"",
     "lint:scss:fix": "stylelint \"**/*.scss\" --fix",
     "test:unit": "jest --config ./config/jest/jest.config.ts",
-    "test:ui": "npx chromatic --build-script-name=storybook:build --config-file=./config/chromatic/chromatic.config.json",
+    "test:ui": "npx chromatic --config-file=./config/chromatic/chromatic.config.json",
     "test:ui:ok": "npx chromatic --approve --config-file=./config/chromatic/chromatic.config.json",
-    "test:ui:ci": "npx chromatic --build-script-name=storybook:build --storybook-build-dir=storybook-static --storybook-config-dir=./config/storybook --config-file=./config/chromatic/chromatic.config.json",
+    "test:ui:ci": "npx chromatic --storybook-build-dir=storybook-static --storybook-config-dir=./config/storybook --config-file=./config/chromatic/chromatic.config.json",
     "storybook": "BROWSER='google chrome' storybook dev -p 6006 -c ./config/storybook",
-    "storybook:build": "storybook build -c ./config/storybook --stats-json",
-    "build-storybook": "npm run storybook:build"
+    "storybook:build": "storybook build -c ./config/storybook --stats-json"
   },
   "keywords": [],
   "author": "",
