@@ -15,5 +15,3 @@ export const Normal: Story = {};
 
 export const Dark: Story = {};
 Dark.decorators = [ThemeDecorator(Theme.DARK)];
-
-// todo 26 урок - время урока 00:00

@@ -3,18 +3,18 @@ import Sidebar from 'widgets/Sidebar/ui/Sidebar/Sidebar';
 import {
 	renderWithTranslation,
 } from 'shared/lib/tests/renderWithTranslation/renderWithTranslation';
+import { componentRender } from 'shared/lib/tests/ComponetnRender/componetnRender';
 
 describe('Sidebar testing', () => {
 	test('Test render sidebar', () => {
-		renderWithTranslation(<Sidebar />);
+		componentRender(<Sidebar />);
 		expect(screen.getByTestId('sidebar')).toBeInTheDocument();
 	});
 	test('Test toggle', () => {
-		renderWithTranslation(<Sidebar />);
+		componentRender(<Sidebar />);
 		const toggleBtn = screen.getByTestId('sidebar-toggle');
 		expect(screen.getByTestId('sidebar')).toBeInTheDocument();
 		fireEvent.click(toggleBtn);
-		screen.debug();
 		expect(screen.getByTestId('sidebar')).toHaveClass('collapsed');
 	});
 });
