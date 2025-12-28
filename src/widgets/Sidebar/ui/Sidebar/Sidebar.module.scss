@@ -5,8 +5,8 @@
 	width: var(--sidebar-width);
 	height: calc(100vh - var(--navbar-height));
 	padding: 20px 10px;
-	transition: width 0.3s;
 	background: var(--inverted-bg-color);
+	transition: width 0.3s;
 }
 
 .collapsed {
@@ -69,9 +69,9 @@
 
 .linkText {
 	overflow: hidden;
-	transition: opacity 0.3s, width 0.3s;
 	white-space: nowrap;
 	text-overflow: ellipsis;
+	transition: opacity 0.3s, width 0.3s;
 
 	.collapsed & {
 		width: 0;

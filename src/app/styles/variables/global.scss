@@ -10,8 +10,18 @@
 	--font-line-xl: 40px;
 	--font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
 
-	// Размеры
+	// size
 	--navbar-height: 50px;
 	--sidebar-width: 300px;
 	--sidebar-width-collapsed: 80px;
+
+	// z - index
+	--below-z-index: -1;
+	--modal-z-index: 10;
+
+	// color
+	--overlay-color: rgba(0 0 0 / 50%);
+
+	// transition
+	--transition-duration-default: 0.3s;
 }
