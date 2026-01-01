@@ -25,5 +25,11 @@ export default ({ config }: { config: webpack.Configuration }) => {
 		use: ['@svgr/webpack'],
 	});
 	config.module.rules.push(buildCssLoader(true));
+	config.plugins = config.plugins || [];
+	config.plugins.push(
+		new webpack.DefinePlugin({
+			__IS_DEV__: JSON.stringify(process.env.NODE_ENV === 'development'),
+		}),
+	);
 	return config;
 };
