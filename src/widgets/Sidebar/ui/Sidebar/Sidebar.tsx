@@ -78,4 +78,4 @@ export const Sidebar = ({ className }: SidebarProps) => {
 };
 
 export default Sidebar;
-// todo 29 урок - время урока 29:00
+// todo 30 урок - время урока 30:00

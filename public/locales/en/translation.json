@@ -10,5 +10,7 @@
     "refresh the page": "refresh the page",
     "throw error": "throw error",
     "Short language": "En",
-    "Login": "Login"
+    "Login": "Login",
+    "increment": "increment",
+    "decrement": "decrement"
 }

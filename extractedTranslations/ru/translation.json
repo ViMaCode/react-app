@@ -7,9 +7,12 @@
   "Main page": "Main page",
   "Page not found": "Page not found",
   "Switch": "switch",
+  "decrement": "decrement",
+  "increment": "increment",
   "login": "login",
   "refresh the page": "refresh the page",
   "switch": "switch",
   "switching": "switching",
+  "test": "test",
   "throw error": "throw error"
 }

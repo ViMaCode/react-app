@@ -10,5 +10,7 @@
     "refresh the page": "обновить страницу",
     "throw error": "пробросить ошибку",
     "Short language": "Ru",
-    "Login": "Авторизоваться"
+    "Login": "Авторизоваться",
+    "increment": "прибавить",
+    "decrement": "вычесть"
 }
