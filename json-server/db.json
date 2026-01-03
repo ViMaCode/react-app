@@ -1,28 +1,30 @@
 {
   "posts": [
     {
-      "id": "1",
-      "title": "another title",
-      "views": 100
+      "id": 1,
+      "title": "json-server",
+      "userId": 1
     },
     {
-      "id": "2",
-      "title": "another title",
-      "views": 200
-    },
-    {
-      "username": "admin",
-      "password": "123",
-      "id": "D8bMQRw"
-    },
-    {
-      "username": "admin",
-      "password": "123",
-      "id": "1cPTv3Z"
+      "id": 2,
+      "title": "json-server",
+      "userId": 2
     }
   ],
-  "comments": [],
-  "profile": {
-    "name": "typicode"
-  }
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "123"
+    }
+  ],
+  "profile": { "name": "typicode" }
 }
+g
