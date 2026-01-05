@@ -1,0 +1,17 @@
+.InputWrapper {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 16px;
+}
+
+.input {
+	flex-grow: 1;
+	min-width: 200px;
+	height: 36px;
+	padding: 4px 12px;
+	border: 1px solid var(--primary-color);
+	background-color: transparent;
+	outline: none;
+	color: var(--primary-color);
+}
