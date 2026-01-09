@@ -50,7 +50,7 @@ module.exports = {
 				ignoreAttribute: ['data-testid', 'to'],
 			},
 		],
-		'max-len': ['warn', { ignoreComments: true, code: 100 }],
+		'max-len': ['warn', { ignoreComments: true, code: 120 }],
 		// start Позже исправить поведение клика не на кнопках
 		'jsx-a11y/click-events-have-key-events': 'off',
 		'jsx-a11y/no-static-element-interactions': 'off',

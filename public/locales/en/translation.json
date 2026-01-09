@@ -14,5 +14,11 @@
     "increment": "increment",
     "decrement": "decrement",
     "enter user name": "enter the user's name",
-    "enter password": "enter password"
+    "enter password": "enter password",
+    "Authorization form": "Authorization form",
+    "Unknown error": "Unknown error",
+    "Authorization error": "Authorization error",
+    "The server did not return user data": "The server did not return user data",
+    "User not found": "User not found",
+    "Logout": "Logout"
 }

@@ -1,6 +1,39 @@
 const fs = require('fs');
 const jsonServer = require('json-server');
 const path = require('path');
+const i18n = require('i18next');
+const Backend = require('i18next-fs-backend');
+
+// Функция для извлечения языка из заголовка
+function getLanguageFromHeader(acceptLanguage, customLanguage) {
+	// Приоритет: кастомный заголовок > Accept-Language
+	if (customLanguage) {
+		return customLanguage.split('-')[0];
+	}
+	if (!acceptLanguage) {
+		return 'en';
+	}
+	return acceptLanguage.split(',')[0].split('-')[0];
+}
+
+// синхронная загрузка переводов
+const enTranslations = JSON.parse(
+	fs.readFileSync(path.resolve(__dirname, '../public/locales/en/translation.json'), 'utf-8'),
+);
+const ruTranslations = JSON.parse(
+	fs.readFileSync(path.resolve(__dirname, '../public/locales/ru/translation.json'), 'utf-8'),
+);
+
+i18n
+	.use(Backend)
+	.init({
+		lng: 'en', // язык по умолчанию
+		fallbackLng: 'en',
+		resources: {
+			en: { translation: enTranslations },
+			ru: { translation: ruTranslations },
+		},
+	});
 
 const server = jsonServer.create();
 
@@ -32,9 +65,15 @@ server.post('/login', (req, res) => {
 			return res.json(userFromBd);
 		}
 
-		return res.status(403).json({ message: 'User not found' });
+		// Можно динамически менять язык на основе заголовка запроса
+		const language = getLanguageFromHeader(
+			req.headers['accept-language'],
+			req.headers['x-app-language'], // ← Читаем кастомный заголовок
+		);
+		return res.status(403).json({
+			message: i18n.t('User not found', { lng: language }),
+		});
 	} catch (e) {
-		console.log(e);
 		return res.status(500).json({ message: e.message });
 	}
 });
@@ -43,7 +82,10 @@ server.post('/login', (req, res) => {
 // eslint-disable-next-line
 server.use((req, res, next) => {
 	if (!req.headers.authorization) {
-		return res.status(403).json({ message: 'AUTH ERROR' });
+		const language = getLanguageFromHeader(req.headers['accept-language']);
+		return res.status(403).json({
+			message: i18n.t('Authorization error', { lng: language }),
+		});
 	}
 
 	next();
