@@ -14,10 +14,10 @@
 		animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 		opacity: 1;
 	}
-}
 
-.lds-ripple div:nth-child(2) {
-	animation-delay: -0.5s;
+	& div:nth-child(2) {
+		animation-delay: -0.5s;
+	}
 }
 
 @keyframes lds-ripple {

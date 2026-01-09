@@ -10,9 +10,15 @@
     "refresh the page": "обновить страницу",
     "throw error": "пробросить ошибку",
     "Short language": "Ru",
-    "Login": "Авторизоваться",
+    "Login": "Войти",
     "increment": "прибавить",
     "decrement": "вычесть",
     "enter user name": "введите имя пользователя",
-    "enter password": "введите пароль"
+    "enter password": "введите пароль",
+    "Authorization form": "Форма авторизации",
+    "Unknown error": "Неизвестная ошибка",
+    "Authorization error": "Ошибка авторизации",
+    "The server did not return user data": "Сервер не вернул данные пользователя",
+    "User not found": "Пользователь не найден",
+    "Logout": "Выйти"
 }
